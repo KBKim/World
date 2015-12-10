@@ -5,8 +5,11 @@
 <!--   <mapping decorator="/default-decorator.html"/> -->
 
   <!-- Map decorators to path patterns. -->
-  <mapping path="/jsp/city/main.jsp" decorator="/decorators/menu.jsp"/>
-  <mapping path="/jsp/country/main.jsp" decorator="/decorators/menu.jsp"/>
+  <mapping path="/jsp/city/main.jsp" decorator="/decorators/menu_sider.jsp"/>
+  <mapping path="/jsp/country/main.jsp" decorator="/decorators/menu_sider.jsp"/>
+  
+  <mapping path="/study/*" decorator="/decorators/menu_sider.jsp"/>
+  
   
 <!--   <mapping path="/*.special.jsp" decorator="/special-decorator.html"/> -->
 
