@@ -1,24 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"  session="false" trimDirectiveWhitespaces="true"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@ taglib prefix="sitemesh" tagdir="/WEB-INF/tags/sitemesh" %>
+    pageEncoding="UTF-8" session="false" trimDirectiveWhitespaces="true"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="sitemesh" tagdir="/WEB-INF/tags/sitemesh" %> 
 <!DOCTYPE html>
 <html lang="ko" data-ng-app="worldApp">
 <head>
-<title><sitemesh:write property='title' /></title>
+<title><sitemesh:write property='title'/></title>
 
-<sitemesh:write property='head' />
+<sitemesh:write property='head'/>
 
-<c:url var="menu_sider" value="/css/menu_sider.css" />
-<c:url var="menu_sider_js" value="/js/menu_sider.js" />
+<c:url var="menu_sider" 	value="/css/menu_sider.css"/>
+<c:url var="menu_sider_js" 	value="/js/menu_sider.js"/>
 
-<link rel="stylesheet" href="${menu_sider }" />
-<script type="text/javascript" src="${menu_sider_js }"></script>
+<link rel="stylesheet" href="${menu_sider}"/>
+<script type="text/javascript" src="${menu_sider_js}"></script>
 
 </head>
-<body data-ng-controller="mainController">  
+<body data-ng-controller="mainController">
 
 <div id="wrapper">
 
@@ -356,22 +356,14 @@
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
-            
-            <sitemesh:write property='body' />
-            
+            <sitemesh:write property='body'/>
         </div>
         <!-- /.container-fluid -->
     </div>
     <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
+    <!-- /#wrapper -->
 
 </body>
 </html>
-
-
-
-
-
-
